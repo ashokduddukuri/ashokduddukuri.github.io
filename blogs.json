@@ -1,8 +1,0 @@
-[
-    {
-        "link": "https://medium.com/@ashokduddukuri/designing-state-in-redux-ebfff07162f7",
-        "title": "Designing State In Redux",
-        "meta": "Redux is a predictable state container with its roots from the flux architecture. Advantages of normalizing the store to nesting.",
-        "img": "https://cdn-images-1.medium.com/max/1200/1*k8DuFwe2U-5yVRE1IqWolg.jpeg"
-    }
-]

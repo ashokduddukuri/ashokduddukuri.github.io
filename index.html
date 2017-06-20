@@ -60,7 +60,7 @@
                 <i class="fa fa-facebook fa-3x " aria-hidden="true "></i>
             </a>
         </seaction>
-        <section id="blog-posts ">
+        <section id="blog-posts">
             <h3>Written by me</h3>
         </section>
 
@@ -70,22 +70,20 @@
     <script>
         var data = [
             {
-                "link ": "https://medium.com/@ashokduddukuri/designing-state-in-redux-ebfff07162f7 ",
-                "title ": "Designing State In Redux ",
-                "meta ": "Redux is a predictable state container with its roots from the flux architecture. Advantages
-                of normalizing the store to nesting. ",
-                "img ": "https://cdn-images-1.medium.com/max/1200/1*k8DuFwe2U-5yVRE1IqWolg.jpeg "
+                "link": "https://medium.com/@ashokduddukuri/designing-state-in-redux-ebfff07162f7 ",
+                "title": "Designing State In Redux ",
+                "meta": "Redux is a predictable state container with its roots from the flux architecture. Advantages of normalizing the store to nesting. ",
+                "img": "https://cdn-images-1.medium.com/max/1200/1*k8DuFwe2U-5yVRE1IqWolg.jpeg "
             },
             {
-                "link ": "https://medium.com/@ashokduddukuri/solid-principles-in-2-min-c01ba652f9cc ",
-                "title ": "SOLID Principles in a glance ",
-                "meta ": "A Class should be responsible only for handling any one kind of responsibility.Unnecessary code
-                should be moved to another Class(if necessary). If you are making changes to the same Class for… ",
-                "img ": "https://cdn-images-1.medium.com/max/1200/1*fs31CsdotOl3kHg5E6JoCg.jpeg "
+                "link": "https://medium.com/@ashokduddukuri/solid-principles-in-2-min-c01ba652f9cc ",
+                "title": "SOLID Principles in a glance ",
+                "meta": "A Class should be responsible only for handling any one kind of responsibility.Unnecessary code should be moved to another Class(if necessary). If you are making changes to the same Class for… ",
+                "img": "https://cdn-images-1.medium.com/max/1200/1*fs31CsdotOl3kHg5E6JoCg.jpeg "
             }
         ];
     </script>
-    <script id="blog-post-template " type="text/template ">
+    <script id="blog-post-template" type="text/template ">
         <div class="blog-wrap ">
             <a href="<%=link%>" target="_blank" class="blog-title">
             <strong class="markup--strong markup--mixtapeEmbed-strong"><%=title%></strong>
@@ -97,10 +95,8 @@
     </script>
     <script>
         var postsEle = document.getElementById('blog-posts');
-        console.log(postsEle);
         var compiled = _.template(document.getElementById("blog-post-template").innerHTML);
         _.each(data, (post) => {
-            console.log(compiled(post))
             postsEle.insertAdjacentHTML('beforeend', compiled(post));
         });
     </script>
